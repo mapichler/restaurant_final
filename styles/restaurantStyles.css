@@ -1,0 +1,41 @@
+/*
+Creator: map
+Date created: 4/14/2019
+Date last modified: 4/14/2019
+removed nav section, stopped working when bootstrap was added.  had to put in style
+
+*/
+
+body {
+    background-color: #373737;
+    color: #f4f4f4;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Merienda', cursive;
+
+}
+ header.jumbotron {
+   background-color: #C0B283;
+   color: #373737;
+   text-align: center;
+   padding: 10px 10px 10px 10px;
+   font-family: 'Merienda', cursive;
+   font-size: 25px;
+
+ }
+ footer {
+    background-color: #C0B283;
+    color: #373737;
+    height: 100px;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+
+
+}
+.clear-float {
+    clear:both;
+}
+
+
+
+/* Form styling */

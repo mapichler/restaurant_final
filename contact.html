@@ -1,0 +1,197 @@
+<!doctype html>
+<!--
+    Name:map
+    Date Created:4/14/2019
+    Last Update Date:4/24/2019
+can not get the form to center once bootstrap was added
+-->
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <noscript>
+          <div style="border: 1px solid red; background-color: red; padding: 10px">
+            <span style="color:white"><i class="fas fa-exclamation"></i> Hello, you seem to have JavaScript disabled.  Please enable to see site properly.</span>
+          </div>
+    </noscript>
+    <title>Contact Us</title>
+
+<style>
+  nav {
+      border-top: 2px solid #DCD0C0;
+      border-bottom: 2px solid #DCD0C0;
+      padding-top: 12px;
+      padding-bottom: 12px;
+
+  }
+
+  nav .btn {
+      background-color: #438496;
+      color: #373737;
+      text-decoration: underline;
+      text-align: center;
+  }
+
+  nav.btn.visited{
+      color: #008f95;
+  }
+
+  nav .btn:hover {
+      font-weight: bold;
+  }
+  nav.btn:active {
+    text-decoration: none;
+  }
+#submit{
+  background-color: #C0B283;
+  color: #373737;
+  border-color: #373737;
+  margin: auto;
+  text-align: center;
+  display:block;
+}
+.form-control{
+  width: 50%!important;
+}
+
+  </style>
+    </head>
+    <body>
+      <header class = "jumbotron">
+        <h1> Bob's Burgers </h1>
+        <h2> New location opening Fall of 2019!</h2>
+      </header>
+
+          <nav>
+            <a class = "btn btn-default btn-md"= href ="home.html"><i class="fas fa-home"></i> Home</a>
+            <a class = "btn btn-default btn-md"= href ="menu.html"> Menu</a>
+            <a class = "btn btn-default btn-md"= href ="contact.html"> Contact Us</a>
+          </nav>
+          <br />
+        <section>
+        <div class = "contactblock">
+          <form>
+            <div class="form-group row">
+              <label for="name" class="col-sm-2 col-form-label">Name:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="name">
+              </div>
+            </div>
+          <div class="form-group row">
+            <label for="email" class="col-sm-2 col-form-label">*Email:</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="email" placeholder="Email@example.com" required>
+            </div>
+          </div>
+        <div class="form-group row">
+          <label for="phone" class="col-sm-2 col-form-label">Phone:</label>
+          <div class="col-sm-10">
+            <input type="phone" class="form-control" id="phone" placeholder="(xxx)xxx-xxxx">
+          </div>
+        </div>
+        <div class="form-group">
+    <label for="reason" class="col-sm-2 col-form-label" >*Reason for Inquiry:</label>
+    <select class="form-check form-check-inline" id="reason" required>
+      <option selected>Catering</option>
+      <option>Private Party</option>
+      <option>Feedback</option>
+      <option>Other</option>
+    </select>
+  </div>
+  <div class="form-group">
+<label for="info" class="col-sm-2">Additional Information:</label>
+<textarea rows = "4" name = "info" id="info">
+</textarea>
+</div>
+
+
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2">Have you been to the restaurant?</legend>
+      <div class="col-sm-10">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+          <label class="form-check-label" for="gridRadios1">
+            No
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+          <label class="form-check-label" for="gridRadios2">
+            Yes
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+  <div class="form-group row">
+    <div class="col-sm-2">Best days to contact you:</div>
+    <div class="col-sm-10">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="M">
+        <label class="form-check-label" for="gridCheck1">
+          M
+        </label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="T">
+        <label class="form-check-label" for="gridCheck1">
+          T
+        </label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="W">
+        <label class="form-check-label" for="gridCheck1">
+          W
+        </label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="Th">
+        <label class="form-check-label" for="gridCheck1">
+          TH
+        </label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="F">
+        <label class="form-check-label" for="gridCheck1">
+          F
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="col-sm-10">
+      <button type="submit" class="btn btn-primary" id= "submit" >Submit Request</button>
+    </div>
+  </div>
+</form>
+<br/>
+</div>
+</section>
+<br />
+
+  <footer>
+    <p> 15 Ocean Avenue North,  Jersey Shore, NJ 55407 </p>
+    <p> (202)555-0114 </p>
+  </footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<noscript>
+      <div style="border: 1px solid red; background-color: red; padding: 10px">
+        <span style="color:white"><i class="fas fa-exclamation"></i> Hello, you seem to have JavaScript disabled.  Please enable to see site properly.</span>
+      </div>
+</noscript>
+</body>
+</html>
